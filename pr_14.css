@@ -1,0 +1,109 @@
+/* h2:hover
+{
+    animation-name: increase_h2_size;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+} */
+
+.change_background
+{
+    animation-name: change_background;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.change_background_back
+{
+    animation-name: change_background_back;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; 
+}
+.show_lectures
+{
+    animation-name: show_lectures;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+}
+.hide_lectures
+{
+    animation-name: hide_lectures;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+}
+/* #mainphoto:hover
+{
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+} */
+#thanks
+{
+    animation-name: form;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; 
+}
+@keyframes increase_h2_size
+{
+    to{
+        transform: scale(1.2);
+    } 
+}
+@keyframes change_background
+{
+    from {
+        background-color: #F9E1C1;
+    }
+    to{
+        background-color: powderblue;
+    }
+}
+@keyframes change_background_back
+{
+    from {
+        background-color: powderblue;
+    }
+    to{
+        background-color: #F9E1C1;
+    }
+}
+@keyframes show_lectures {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes hide_lectures {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+@keyframes form {
+    from{
+        opacity: 0;
+        visibility: hidden;
+    }
+    to{
+        opacity: 1;
+        visibility: visible;
+    } 
+    
+}
+
+

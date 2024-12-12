@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="pr_14.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa" rel="stylesheet">
+
+</head>
+<!-- Добавить кнопку после первой таблицы для сдачи 14 работы! -->
+ <!-- Добавить в конце ссылку на скрипт для 14 работы! -->
+<body>
+    <script src="menu.js"></script>
+    <header>
+        <img src = "logo.jpg" class="pic">
+        <p> Группа ЭФБО-01-23 <br/>
+        Тимина Мария Игоревна</p>
+        <nav>
+            <ul>
+                <li> <a href="./index.html"> Главная</a></li>
+                <li> <a href="./first.html"> Первый семестр</a></li>
+                <div class="dropdown">
+                    <li> <a href="#" class="dropbtn" onclick="myFunction()"> Второй семестр</a></li>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="second_bs.html">Bootstrap</a>
+                        <a href="#">Normal</a>
+                    </div>
+                </div>
+                <li> <a href="./service.html"> Услуги</a></li>
+                <li> <a href="#"> Авторизация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <h3>Навигация по&nbsp;странице</h3>
+            <ul>
+                <li> <a href="#lectures"> Лекции </a></li>                    
+                <li> <a href="#seminars"> Практики </a></li> 
+                <li> <a href="#map"> Адреса&nbsp;вуза </a></li>                    
+                <li> <a href="#program"> Рабочая программа </a></li>                    
+
+            </ul>
+    </aside>
+    <main>
+        <table id="lectures">
+            <caption id="lectures">Лекции</caption>
+            <thead>
+                <tr>
+                    <th>Номер</th>
+                    <th>Тема</th>
+                    <th>Посещение</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Основы языка HTML</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Углубленное изучение языка HTML</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Основы работы с CSS</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Адаптивная верстка. Flexbox и Grid Layout</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Bootstrap - работа с фреймворком</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Основы языка JavaScript</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Работа с DOM и событиями в JavaScript</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Введение в GitHub и GitHub Pages</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+
+            </tbody>
+        </table>
+        <!-- <button id="small_button_2">Показать лекции</button> -->
+        <table id="seminars1">
+            <caption id="seminars">Практики</caption>
+            <thead>
+                <tr>
+                    <th>Номер</th>
+                    <th>Тема</th>
+                    <th>Посещение</th>
+                    <th>Выполнение</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Основы языка HTML</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Формы и кнопки в HTML</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Таблицы и интерактинвые элементы в HTML</td>
+                    <td  class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Основы работы с CSS</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Работа с классами в CSS</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Работа с сетками и разметкой в HTML</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Адаптивная верстка</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Bootstrap</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Основы языка JavaScript</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Базовые задачи на JS</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>DOM-структура приложений и работа с объектами в языке JS</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Встраивание скриптов</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Отладка сценариев</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Анимации и работа с ними</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Github</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Защита проекта</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table id="seminars2">
+            <caption id="seminars">Практики</caption>
+            <thead>
+                <tr>
+                    <th>Номер</th>
+                    <th>Тема</th>
+                    <th>Посещение</th>
+                    <th>Выполнение</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Базовое бэкенд-приложение</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>HTTP-запросы</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>JSON и работа с ним</td>
+                    <td  class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>HTTP-ответы</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Проектирование API</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Роутинг и его настройка</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>NoSQL базы данных</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Обеспечение авторизации и доступа пользователей</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Работа сторонних сервисов уведомления и авторизации</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td> Основы ReactJS</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Работа с компонентами динамической DOM</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Использование хуков в React</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Отладка сценариев</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Основы микросервисной архитектуры</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Разработка классических модулей веб-приложений</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Разработка классических модулей веб-приложений</td>
+                    <td class="mid"><input type="checkbox" /></td>
+                    <td class="mid"><input type="checkbox" /></td>
+                </tr>
+
+            </tbody>
+        </table>
+        <button class="small_button">Посмотреть практики второго семестра</button>
+        <h3 id="map">Адреса вуза</h3>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae80882eb9867515fe27f3efe0784f15737215c43ca505b1590d9c1a3a9ea4070&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        <h3 id="program">Рабочая программа</h3>
+        <object data="./sample-3.pdf"></object>
+        <a href="#top"><img src="arrow.png" class="arrow"></a>
+    </main>
+    <footer>
+        <p class="mid purp">
+            &copy Тимина Мария Игоревна, 2024
+        </p>
+        
+    </footer>
+    <script src="script.js"></script>
+    <!-- <script src="script_14.js"></script> -->
+</body>
+</html>

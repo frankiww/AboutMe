@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="pr_14.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <script src="menu.js"></script>
+    <header>
+        <a href="index.html">
+        <img src = "logo.jpg" class="pic"></a>
+        <p> Группа ЭФБО-01-23 <br/>
+        Тимина Мария Игоревна</p>
+        <nav>
+            <ul>
+                <li> <a href="./index.html"> Главная</a></li>
+                <li> <a href="./first.html"> Первый семестр</a></li>
+                <div class="dropdown">
+                    <li> <a href="#" class="dropbtn" onclick="myFunction()"> Второй семестр</a></li>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="second_bs.html">Bootstrap</a>
+                        <a href="#">Normal</a>
+                    </div>
+                </div>
+                <li> <a href="./service.html"> Услуги</a></li>
+                <li> <a href="#"> Авторизация</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <h3>Навигация по&nbsp;странице</h3>
+            <ul>
+                <li> <a href="#"> Разработка<br> веб-приложений </a></li>                    
+            </ul>
+    </aside>
+    <main>
+        <h2>Разработка веб-приложений</h2>
+        <div class="grid-container">
+            <figure>
+                <img src="photo.jpg" class="exphoto">
+                <figcaption>Сайт-визитка</figcaption>
+                <button class="showDialog" id="showDialog">Заказать</button>
+            </figure>
+            <figure>
+                <img src="photo.jpg" class="exphoto">
+                <figcaption>Корпоративный сайт</figcaption>
+                <button class="showDialog" id="showDialog2">Заказать</button>
+            </figure>
+            <figure>
+                <img src="photo.jpg" class="exphoto">
+                <figcaption>Интернет-магазин</figcaption>
+                <button class="showDialog" id="showDialog3">Заказать</button>
+            </figure>
+            <figure>
+                <img src="photo.jpg" class="exphoto">
+                <figcaption>Сайт-визитка</figcaption>
+                <button class="showDialog" id="showDialog">Заказать</button>
+            </figure>
+            <figure>
+                <img src="photo.jpg" class="exphoto">
+                <figcaption>Сайт-визитка</figcaption>
+                <button class="showDialog" id="showDialog">Заказать</button>
+            </figure>
+            <figure>
+                <img src="photo.jpg" class="exphoto">
+                <figcaption>Сайт-визитка</figcaption>
+                <button class="showDialog" id="showDialog">Заказать</button>
+            </figure>
+        </div>
+        <dialog id="favDialog">
+            <button id="close">X</button>
+            <h2>Разработка веб-приложения</h2>
+            <p>Заполните форму и мы обязательно свяжемся с вами в ближайшее время для уточнения деталей</p>
+            <form id="contactForm">
+                <div>
+                    <label for="name">Как вас зовут</label>
+                    <input type="text" id="name" name="name" placeholder="Имя" required>
+                </div>
+            
+                <div>
+                    <label for="email">Ваш e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="email@mail.ru" required>
+                </div>
+            
+                <div>
+                    <label for="number">Телефон</label>
+                    <input type="number" id="number" name="number" placeholder="8-000-000-00-00" required>
+                </div>
+                <div>
+                    <label for="country">Страна</label>
+                    <input list="countries" id="country" name="country" required>
+                    <datalist id="countries">
+                        <option value="Россия"></option>
+                        <option value="Италия"></option>
+                        <option value="Франция"></option>
+                        <option value="Австралия"></option>
+                    </datalist>
+                </div>
+            
+                <div>
+                    <label for="date">Дата</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+            
+                <div>
+                    <label for="comment">Комментарий</label>
+                    <textarea id="comment" name="comment"></textarea>
+                </div>
+            
+                <div>
+                    <input type="checkbox" id="agreement" required>
+                    <label for="agreement"> Согласен на обработку персональных данных</label>
+            
+                </div>
+                    <input type="submit" class="submit" value="Отправить заявку" id="submit"></button>
+                </form>
+        </dialog>
+        <dialog id="thanks">
+            <button id="close_2">X</button>
+            <p>Форма отправлена!</p>
+        </dialog>
+
+
+
+        <a href="#top"><img src="arrow.png" class="arrow"></a>
+    </main>
+    <footer>
+        <p class="mid purp">
+            &copy Тимина Мария Игоревна, 2024
+        </p>    
+    </footer>
+<script src="form.js"></script>
+</body>
+</html>
